@@ -1,0 +1,155 @@
+html {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+    font-size: calc(65% + 0.8vmin);
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+
+    background-color: var(--color-violet);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    padding: 0 4rem;
+    max-height: 100vh;
+}
+
+@media only screen and (max-width: 50rem) {
+    body {
+        text-align: center;
+        padding: 0 2rem;
+
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain;
+    }
+}
+
+header {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    header {
+        margin-top: 2rem;
+    }
+
+    header img {
+        width: 12rem;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-areas: "photo content";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.photo img {
+    width: 50rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    .photo {
+        margin-bottom: 4rem;
+    }
+}
+
+.content {
+    margin: 2rem 4rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    .content {
+        margin: 0rem;
+    }
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+p {
+    color: white;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+button {
+    color: var(--color-violet);
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 50rem) {
+    button {
+        font-size: 1rem;
+        padding: 1rem 6rem;
+    }
+}
+
+button:hover {
+    background-color: var(--color-soft-magenta);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+i {
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    border: 0.1rem solid white;
+    margin-left: 1rem;
+}
