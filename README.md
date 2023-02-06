@@ -1,2 +1,1 @@
-# FM-Huddle-landing-page
-A landing page made with HTML &amp; CSS.
+## 👋🏼 Thank you for checking out my webpage. I appreciate it! 👋🏼
